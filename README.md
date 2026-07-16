@@ -1,3 +1,9 @@
+## Set up Socket proxy on your Host
+```
+ssh root@77.198.49.173 -D 0.0.0.0:9999
+
+```
+
 ## run Proxy
 ```
 docker run -d --name proxy --cap-add=NET_ADMIN --add-host=host.docker.internal:host-gateway myridia/proxy
